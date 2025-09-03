@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Form & Frame</title>
+</head>
+<body>
+
+<h2>Contoh Formulir</h2>
+
+<!-- Radio Button -->
+<form>
+  <p>Jenis Kelamin:</p>
+  <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+  <input type="radio" name="jk" value="Perempuan"> Perempuan
+  <br><br>
+
+  <!-- Drop Down -->
+  <label for="jurusan">Pilih Jurusan:</label>
+  <select id="jurusan" name="jurusan">
+    <option value="TI">Teknik Informatika</option>
+    <option value="SI">Sistem Informasi</option>
+    <option value="TE">Teknik Elektro</option>
+  </select>
+  <br><br>
+
+  <!-- Text Area -->
+  <label for="pesan">Pesan/Komentar:</label><br>
+  <textarea id="pesan" name="pesan" rows="4" cols="40"></textarea>
+  <br><br>
+
+  <input type="submit" value="Kirim">
+</form>
+
+<hr>
+
+<h2>Contoh Frame</h2>
+
+<p><b>Frame Horizontal:</b></p>
+<frameset rows="50%,50%">
+  <frame src="atas.html">
+  <frame src="bawah.html">
+</frameset>
+
+<p><b>Frame Vertikal:</b></p>
+<frameset cols="50%,50%">
+  <frame src="kiri.html">
+  <frame src="kanan.html">
+</frameset>
+
+<p><b>Frame Gabungan Horizontal & Vertikal:</b></p>
+<frameset rows="30%,70%">
+  <frame src="atas.html">
+  <frameset cols="50%,50%">
+    <frame src="bawah-kiri.html">
+    <frame src="bawah-kanan.html">
+  </frameset>
+</frameset>
+
+</body>
+</html>
